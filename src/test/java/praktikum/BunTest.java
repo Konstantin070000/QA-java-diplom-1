@@ -30,10 +30,16 @@ public class BunTest {
     }
 
     @Test
-    public void bunConstructorShouldSetNameAndPriceCorrectly() {
+    public void bunConstructorShouldSetNameCorrectly() {
         Bun bun = new Bun(name, price);
 
         assertEquals(name, bun.getName());
+    }
+
+    @Test
+    public void bunConstructorShouldSetPriceCorrectly() {
+        Bun bun = new Bun(name, price);
+
         assertEquals(price, bun.getPrice(), 0.0001F);
     }
 }

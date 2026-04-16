@@ -8,6 +8,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class PraktikumTest {
 
@@ -28,6 +29,8 @@ public class PraktikumTest {
     @Test
     public void shouldCreatePraktikumObject() {
         Praktikum praktikum = new Praktikum();
+
+        assertNotNull(praktikum);
     }
 
     @Test

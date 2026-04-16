@@ -31,11 +31,23 @@ public class IngredientTest {
     }
 
     @Test
-    public void ingredientConstructorShouldSetFieldsCorrectly() {
+    public void ingredientConstructorShouldSetTypeCorrectly() {
         Ingredient ingredient = new Ingredient(type, name, price);
 
         assertEquals(type, ingredient.getType());
+    }
+
+    @Test
+    public void ingredientConstructorShouldSetNameCorrectly() {
+        Ingredient ingredient = new Ingredient(type, name, price);
+
         assertEquals(name, ingredient.getName());
+    }
+
+    @Test
+    public void ingredientConstructorShouldSetPriceCorrectly() {
+        Ingredient ingredient = new Ingredient(type, name, price);
+
         assertEquals(price, ingredient.getPrice(), 0.0001F);
     }
 }
